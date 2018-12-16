@@ -13,11 +13,18 @@ import contact.vatTotal;
 
 public class processor extends xmlParser {
 
+	
+	
+	
+	
+	
+	
+	
 	public boolean proc(String url) {
 
 		String head = "Z No FişNo      Fiş Tarihi    Toplam    Kdv [Oran  Tutar    Kdv; Oran  Tutar    Kdv; Oran  Tutar    Kdv; Oran  Tutar    Kdv; ]";
 
- writeTxt(head, url+"output.txt");
+     writeTxt(head, url+"output.txt");
 
 		
 		for (receipt r : sortingList(parsingDoc(ReadingDoc(url)))) {
